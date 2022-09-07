@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MovieTrends</string>
+    <string name="plot_summary">Plot Summary</string>
+    <string name="movie_info">%s · %s · %s</string>
+    <string name="cast">Cast</string>
+    <string name="trending_now">See what\'s trending</string>
+    <string name="discover_movies_by_genres">Discover movies by genres</string>
+</resources>

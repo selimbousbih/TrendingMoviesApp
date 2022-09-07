@@ -1,0 +1,45 @@
+<resources>
+    <style name="Theme.MovieTrends.TextView" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="Theme.MovieTrends.TextView.Content" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+        <item name="android:textColor">?attr/colorOnSecondary</item>
+    </style>
+
+    <style name="Theme.MovieTrends.TextView.Content.Bold" parent="android:Widget.TextView.Content">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Theme.MovieTrends.TextView.Title" parent="Theme.MovieTrends.TextView">
+        <item name="android:fontFamily">@font/lato_regular</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Theme.MovieTrends.TextView.Title.Page" parent="Theme.MovieTrends.TextView.Title">
+        <item name="android:textSize">26sp</item>
+    </style>
+
+    <style name="Theme.MovieTrends.TextView.Title.Section" parent="Theme.MovieTrends.TextView.Title">
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="Theme.MovieTrends.TextView.Small" parent="Theme.MovieTrends.TextView">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Theme.MovieTrends.TextView.Small.Strong" parent="Theme.MovieTrends.TextView.Small">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Theme.MovieTrends.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.MovieTrends.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="circleImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="magenta_200">#F6296F</color>
+    <color name="magenta_500">#E91E63</color>
+    <color name="magenta_700">#D10A4E</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="lightGray">#E6E6E6</color>
+</resources>

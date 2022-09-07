@@ -1,0 +1,68 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MovieTrends" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/magenta_200</item>
+        <item name="colorPrimaryVariant">@color/magenta_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/magenta_700</item>
+        <item name="colorSecondaryVariant">@color/magenta_700</item>
+        <item name="colorOnSecondary">@color/almostWhite</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/black</item>
+        <!-- Customize your theme here. -->
+
+        <item name="android:windowBackground">@color/black</item>
+        <item name="android:textViewStyle">@style/Theme.MovieTrends.TextView</item>
+    </style>
+
+    <style name="Theme.MovieTrends.TextView" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="Theme.MovieTrends.TextView.Content" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+        <item name="android:textColor">?attr/colorOnSecondary</item>
+    </style>
+
+    <style name="Theme.MovieTrends.TextView.Content.Bold" parent="Theme.MovieTrends.TextView.Content">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Theme.MovieTrends.TextView.Title" parent="Theme.MovieTrends.TextView">
+        <item name="android:fontFamily">@font/lato_regular</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Theme.MovieTrends.TextView.Title.Page" parent="Theme.MovieTrends.TextView.Title">
+        <item name="android:textSize">26sp</item>
+    </style>
+
+    <style name="Theme.MovieTrends.TextView.Title.Section" parent="Theme.MovieTrends.TextView.Title">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="Theme.MovieTrends.TextView.Title.Section.Bold" parent="Theme.MovieTrends.TextView.Title.Section">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Theme.MovieTrends.TextView.Small" parent="Theme.MovieTrends.TextView">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Theme.MovieTrends.TextView.Small.Strong" parent="Theme.MovieTrends.TextView.Small">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Theme.MovieTrends.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.MovieTrends.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.MovieTrends.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

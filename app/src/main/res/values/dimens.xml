@@ -1,0 +1,12 @@
+<resources>
+    <dimen name="icon_s">24dp</dimen>
+    <dimen name="icon_m">32dp</dimen>
+    <dimen name="icon_l">48dp</dimen>
+    <dimen name="backdrop_height">400dp</dimen>
+    <dimen name="movie_component_width_large">210dp</dimen>
+    <dimen name="movie_component_height_large">280dp</dimen>
+    <dimen name="movie_component_width_small">120dp</dimen>
+    <dimen name="movie_component_height_small">160dp</dimen>
+    <dimen name="logo_width">112dp</dimen>
+    <dimen name="logo_height">56dp</dimen>
+</resources>

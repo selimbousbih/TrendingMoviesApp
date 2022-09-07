@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewState"
+            type="com.selim.components.movie.MovieComponent.ViewState" />
+    </data>
+
+    <merge
+        tools:layout_height="280dp"
+        tools:layout_width="2100dp"
+        tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+        <com.selim.components.imageview.RoundedImageView
+            android:id="@+id/image"
+            android:layout_width="210dp"
+            android:layout_height="280dp"
+            android:scaleType="centerCrop"
+            app:imageUrl="@{viewState.imageUrl}"
+            app:layout_constraintBottom_toTopOf="@+id/textTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </merge>
+</layout>

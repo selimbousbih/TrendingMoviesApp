@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewState"
+            type="com.selim.components.movie.MovieInfoComponent.ViewState" />
+    </data>
+
+    <merge
+        tools:layout_height="wrap_content"
+        tools:layout_width="wrap_content"
+        tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+        <com.selim.components.imageview.RoundedImageView
+            android:id="@+id/image"
+            android:layout_width="120dp"
+            android:layout_height="160dp"
+            android:scaleType="centerCrop"
+            app:imageUrl="@{viewState.imageUrl}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textTitle"
+            style="@style/Theme.MovieTrends.TextView.Content.Bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@{viewState.title}"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:layout_marginTop="@dimen/spacing_xs"
+            android:textAlignment="textStart"
+            app:layout_constraintTop_toBottomOf="@id/image"
+            app:layout_constraintStart_toStartOf="@id/image"
+            app:layout_constraintEnd_toEndOf="@id/image" />
+
+        <TextView
+            android:id="@+id/textDate"
+            style="@style/Theme.MovieTrends.TextView.Content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:text="@{viewState.year}"
+            app:layout_constraintTop_toBottomOf="@id/textTitle"
+            app:layout_constraintStart_toStartOf="@id/image"
+            app:layout_constraintEnd_toEndOf="@id/image" />
+    </merge>
+</layout>
