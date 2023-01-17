@@ -13,8 +13,12 @@ import com.selim.trends.features.details.DetailsActivity
 import com.selim.trends.features.details.DetailsActivity.Companion.MOVIE_ID_KEY
 import com.selim.trends.utils.launchActivity
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.launchIn
+import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.onEach
+import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
 class HomeActivity : AppCompatActivity() {
@@ -34,8 +38,12 @@ class HomeActivity : AppCompatActivity() {
     private fun observeState() {
         viewModel.homeState.onEach {
             when (it) {
-                HomeViewModel.HomeState.LOADING -> { isLoading(true) }
-                HomeViewModel.HomeState.STOP_LOADING -> { isLoading(false) }
+                HomeViewModel.HomeState.LOADING -> {
+                    isLoading(true)
+                }
+                HomeViewModel.HomeState.STOP_LOADING -> {
+                    isLoading(false)
+                }
                 HomeViewModel.HomeState.READY -> {
                     getTrending()
                     getDiscovery()
